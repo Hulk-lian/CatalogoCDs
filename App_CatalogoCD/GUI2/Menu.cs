@@ -15,5 +15,45 @@ namespace App_CatalogoCD
         {
             InitializeComponent();
         }
+
+        private void btn_leer_Click(object sender, EventArgs e)
+        {
+            Leer formLeer = new Leer();
+            formLeer.Show();
+        }
+
+        private void btn_leerXML_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_modif_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_saveXML_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Evento del botón 'Salir'
+        /// Sale del programa.
+        /// </summary>
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

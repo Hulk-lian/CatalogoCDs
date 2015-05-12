@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 //---------------------------------------------------------------------------------
 
 namespace App_CatalogoCD
@@ -7,8 +10,9 @@ namespace App_CatalogoCD
     {
         static void Main(string[] args)
         {
-			new UI ();
-            Console.ReadLine();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Menu());
         }
     }
 }
