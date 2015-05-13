@@ -8,6 +8,7 @@ namespace App_CatalogoCD
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             Application.EnableVisualStyles();

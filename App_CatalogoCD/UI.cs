@@ -101,7 +101,7 @@ namespace App_CatalogoCD
 		}
 		static void VolcarAFichero()
 		{
-			c.XmlAFichero();
+			c.XmlAFichero("./");
 		}
 
 		static void PedirOpcion()

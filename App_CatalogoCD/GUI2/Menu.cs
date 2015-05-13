@@ -48,12 +48,15 @@ namespace App_CatalogoCD
 
         private void btn_modif_Click(object sender, EventArgs e)
         {
-
+            Modd modif = new Modd();
+            modif.Show();
         }
 
         private void btn_saveXML_Click(object sender, EventArgs e)
         {
-
+            if(saveFile.ShowDialog() == DialogResult.OK)
+                c.XmlAFichero(saveFile.FileName);
+            
         }
 
         /// <summary>

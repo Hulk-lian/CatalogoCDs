@@ -37,6 +37,7 @@
             this.btn_modif = new System.Windows.Forms.Button();
             this.btn_saveXML = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
+            this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // lbl_titulo
@@ -141,6 +142,10 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
+            // saveFile
+            // 
+            this.saveFile.Filter = "Archivo XML (*.xml)|*.xml|Todos los archivos (*.*)|*.*";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,5 +180,6 @@
         private System.Windows.Forms.Button btn_modif;
         private System.Windows.Forms.Button btn_saveXML;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.SaveFileDialog saveFile;
     }
 }
