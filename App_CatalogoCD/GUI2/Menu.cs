@@ -22,20 +22,23 @@ namespace App_CatalogoCD
 
         private void btn_leer_Click(object sender, EventArgs e)
         {
-            Leer formLeer = new Leer();
-            formLeer.Show();
+            Leer lee = new Leer();
+            c.LeerDVD();
+            lee.LeerDVD(c.ToString());
+            lee.Show();
         }
 
         private void btn_leerXML_Click(object sender, EventArgs e)
         {
             Leer lee = new Leer();
+            lee.LeerDVD(c.Xml);
             lee.Show();
-
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
 
+            
         }
 
         private void btn_delete_Click(object sender, EventArgs e)

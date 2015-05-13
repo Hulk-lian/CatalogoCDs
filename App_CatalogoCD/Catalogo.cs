@@ -139,7 +139,7 @@ namespace App_CatalogoCD
 		{
 			String resultado = "\n";
 			foreach (var item in _catalogoDVD) {
-				resultado = resultado + item.ToString () + "\n";
+				resultado = resultado + item.ToString () + '\r' + '\n';
 			}
 			return resultado;
 		}

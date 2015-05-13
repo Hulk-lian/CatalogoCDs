@@ -11,18 +11,17 @@ namespace App_CatalogoCD
 {
     public partial class Leer : Form
     {
-        Catalogo c = new Catalogo();
-
         public Leer()
         {
             InitializeComponent();
         }
 
-        private void LeerDVD()
+        public void LeerDVD(string text)
         {
-            this.Show();
-            c.LeerDVD();
-            textBox1.Text = c.ToString();
+            textBox1.Text = text;
+            textBox1.Focus();
+            textBox1.SelectionStart = textBox1.Text.Length;
+            textBox1.Select(textBox1.Text.Length, 0);
         }
 
     }
