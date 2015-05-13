@@ -85,10 +85,24 @@
     <Compile Include="Catalogo.cs" />
     <Compile Include="DAOdvd.cs" />
     <Compile Include="dvd.cs" />
-    <Compile Include="GUI1\GUI1.cs">
+    <Compile Include="GUI1\GUI1cs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI1\GUI1.Designer.cs" />
+    <Compile Include="GUI1\GUI1cs.Designer.cs">
+      <DependentUpon>GUI1cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI1\Lecturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI1\Lecturas.Designer.cs">
+      <DependentUpon>Lecturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI1\Modificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI1\Modificaciones.Designer.cs">
+      <DependentUpon>Modificaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecursosGUI1.Designer.cs">
@@ -127,7 +141,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GUI1\GUI1.resx" />
+    <EmbeddedResource Include="GUI1\GUI1cs.resx">
+      <DependentUpon>GUI1cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI1\Lecturas.resx">
+      <DependentUpon>Lecturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI1\Modificaciones.resx">
+      <DependentUpon>Modificaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RecursosGUI1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RecursosGUI1.Designer.cs</LastGenOutput>

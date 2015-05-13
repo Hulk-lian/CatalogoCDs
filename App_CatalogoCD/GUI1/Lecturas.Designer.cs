@@ -1,6 +1,6 @@
-﻿namespace App_CatalogoCD
+﻿namespace App_CatalogoCD.GUI1
 {
-    partial class GUI1_menu
+    partial class Lecturas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.txbResultado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // GUI1_menu
+            // txbResultado
+            // 
+            this.txbResultado.Location = new System.Drawing.Point(13, 13);
+            this.txbResultado.Multiline = true;
+            this.txbResultado.Name = "txbResultado";
+            this.txbResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txbResultado.Size = new System.Drawing.Size(559, 336);
+            this.txbResultado.TabIndex = 0;
+            // 
+            // Lecturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(584, 362);
-            this.Name = "GUI1_menu";
-            this.Text = "Catalogo de Cds";
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.txbResultado);
+            this.Name = "Lecturas";
+            this.Text = "Lecturas";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txbResultado;
     }
 }
