@@ -88,11 +88,17 @@
     <Compile Include="Catalogo.cs" />
     <Compile Include="DAOdvd.cs" />
     <Compile Include="dvd.cs" />
-    <Compile Include="GUI2\Add.cs">
+    <Compile Include="GUI2\AddDel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI2\Add.Designer.cs">
-      <DependentUpon>Add.cs</DependentUpon>
+    <Compile Include="GUI2\AddDel.Designer.cs">
+      <DependentUpon>AddDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI2\Modd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI2\Modd.Designer.cs">
+      <DependentUpon>Modd.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI2\Leer.cs">
       <SubType>Form</SubType>
@@ -139,8 +145,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GUI2\Add.resx">
-      <DependentUpon>Add.cs</DependentUpon>
+    <EmbeddedResource Include="GUI2\AddDel.resx">
+      <DependentUpon>AddDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI2\Modd.resx">
+      <DependentUpon>Modd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI2\Leer.resx">
       <DependentUpon>Leer.cs</DependentUpon>

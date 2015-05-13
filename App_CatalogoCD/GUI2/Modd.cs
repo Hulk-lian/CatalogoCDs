@@ -9,18 +9,17 @@ using System.Windows.Forms;
 
 namespace App_CatalogoCD
 {
-    public partial class Add : Form
+    public partial class Modd : Form
     {
 
-        public Add()
+        public Modd()
         {
             InitializeComponent();
         }
 
         private void btn_enviar_Click(object sender, EventArgs e)
         {
-            Catalogo c = new Catalogo();
-            c.AddEntrada(textBox1.Text);
+            
         }
     }
 }

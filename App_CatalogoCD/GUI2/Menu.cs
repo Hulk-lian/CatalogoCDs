@@ -35,14 +35,15 @@ namespace App_CatalogoCD
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            Add add = new Add();
+            AddDel add = new AddDel('a');
             add.Show();
          
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-
+            AddDel add = new AddDel('b');
+            add.Show();
         }
 
         private void btn_modif_Click(object sender, EventArgs e)
