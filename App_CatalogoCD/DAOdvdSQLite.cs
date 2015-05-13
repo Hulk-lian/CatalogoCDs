@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SQLite;
-
+//using Mono.Data.SQLite;
 
 namespace App_CatalogoCD
 {
@@ -52,7 +52,15 @@ namespace App_CatalogoCD
 					+ unDVD.Anio + ")";
 				//Console.WriteLine(sql);
 				SQLiteCommand cmd = new SQLiteCommand(sql, conexion);
-				return cmd.ExecuteNonQuery();
+                try
+                {
+                    return cmd.ExecuteNonQuery();
+                }
+                catch (SQLiteException)
+                {
+                    throw;
+                }
+				
 			}
 			else
 				return 0;

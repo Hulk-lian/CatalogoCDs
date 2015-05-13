@@ -11,10 +11,14 @@ namespace App_CatalogoCD
 {
     public partial class Menu : Form
     {
+        static Catalogo c;
         public Menu()
         {
             InitializeComponent();
+            c = new Catalogo();
         }
+
+      
 
         private void btn_leer_Click(object sender, EventArgs e)
         {
@@ -24,6 +28,8 @@ namespace App_CatalogoCD
 
         private void btn_leerXML_Click(object sender, EventArgs e)
         {
+            Leer lee = new Leer();
+            lee.Show();
 
         }
 
