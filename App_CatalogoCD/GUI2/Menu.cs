@@ -18,8 +18,6 @@ namespace App_CatalogoCD
             c = new Catalogo();
         }
 
-      
-
         private void btn_leer_Click(object sender, EventArgs e)
         {
             Leer lee = new Leer();
@@ -37,8 +35,9 @@ namespace App_CatalogoCD
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-
-            
+            Add add = new Add();
+            add.Show();
+         
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
