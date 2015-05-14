@@ -28,49 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txbCod = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btndel = new System.Windows.Forms.Button();
+            this.btnCont = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txbCod
+            // btnCont
             // 
-            this.txbCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCod.Location = new System.Drawing.Point(102, 78);
-            this.txbCod.Name = "txbCod";
-            this.txbCod.Size = new System.Drawing.Size(147, 38);
-            this.txbCod.TabIndex = 0;
+            this.btnCont.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCont.Location = new System.Drawing.Point(92, 118);
+            this.btnCont.Name = "btnCont";
+            this.btnCont.Size = new System.Drawing.Size(149, 71);
+            this.btnCont.TabIndex = 0;
+            this.btnCont.Text = "Continuar";
+            this.btnCont.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // textBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-4, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Introduzca el codigo del CD";
-            // 
-            // btndel
-            // 
-            this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndel.Location = new System.Drawing.Point(115, 138);
-            this.btndel.Name = "btndel";
-            this.btndel.Size = new System.Drawing.Size(123, 43);
-            this.btndel.TabIndex = 2;
-            this.btndel.Text = "Eliminar";
-            this.btndel.UseVisualStyleBackColor = true;
-            this.btndel.Click += new System.EventHandler(this.btndel_Click);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(73, 56);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(192, 38);
+            this.textBox1.TabIndex = 1;
             // 
             // IntroducirCod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(356, 193);
-            this.Controls.Add(this.btndel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txbCod);
+            this.ClientSize = new System.Drawing.Size(355, 201);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnCont);
             this.Name = "IntroducirCod";
             this.Text = "Introduzca el código";
             this.ResumeLayout(false);
@@ -83,5 +67,7 @@
         private System.Windows.Forms.TextBox txbCod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btndel;
+        private System.Windows.Forms.Button btnCont;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
