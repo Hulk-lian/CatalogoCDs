@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace App_CatalogoCD
 {
@@ -16,6 +9,11 @@ namespace App_CatalogoCD
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Método que muestra por consola tanto la colección de DVD como la biblioteca XML de DVD
+        /// Los parámetros son puramente estéticos
+        /// </summary>
+        /// <param name="text"></param>
         public void LeerDVD(string text)
         {
             textBox1.Text = text;

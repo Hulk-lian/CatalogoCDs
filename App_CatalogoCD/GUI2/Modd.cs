@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace App_CatalogoCD
@@ -18,6 +12,13 @@ namespace App_CatalogoCD
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Eventos del botón 'Enviar' 
+        /// Crea un DVD con los datos pasados por los TextBox y actualiza
+        /// Toda Excepción queda controlada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_enviar_Click(object sender, EventArgs e)
         {
             try
@@ -40,6 +41,11 @@ namespace App_CatalogoCD
             this.Close();
         }
 
+        /// <summary>
+        /// Método para que en los Textbox aparezca los datoas del antiguo DvD para modificarlo o dejarlo como estaba
+        /// Meramente estético
+        /// </summary>
+        /// <param name="registro"></param>
         private void PedirCampos(dvd registro)
         {
             textBox2.Text = registro.Titulo;
@@ -50,6 +56,14 @@ namespace App_CatalogoCD
             textBox7.Text = registro.Anio.ToString();
         }
 
+        /// <summary>
+        /// Evento del botón "Comprobar Código"
+        /// Actualiza el formulario quitando las prohibiciones de solo lectura, y llamada al metodo PedirCampos para
+        /// Que el formulario se rellene solo con los antiguos datos del DVD
+        /// Toda Excepción queda controlada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             try
