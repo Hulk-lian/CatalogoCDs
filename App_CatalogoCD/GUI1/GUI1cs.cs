@@ -15,7 +15,7 @@ namespace App_CatalogoCD
         {
             InitializeComponent();
         }
-        Catalogo cat = new Catalogo();
+         Catalogo cat = new Catalogo();
         private void btnLeer_Click(object sender, EventArgs e)
         {
             Lecturas lect = new Lecturas();
@@ -36,14 +36,12 @@ namespace App_CatalogoCD
         {
             IntroducirCod cod = new IntroducirCod();
             cod.Show();
-            cat.AddEntrada(cod.codigo().ToString());
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             IntroducirCod cod = new IntroducirCod();
             cod.Show();
-            cat.BorrarDVD(cod.codigo().ToString());
         }
 
         private void btnMod_Click(object sender, EventArgs e)

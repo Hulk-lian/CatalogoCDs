@@ -15,15 +15,25 @@ namespace App_CatalogoCD
         {
             InitializeComponent();
         }
+        Catalogo cat = new Catalogo();
 
-        private void btncont_Click(object sender, EventArgs e)
-        {
-            codigo();
-            this.Close();
-        }
         public int codigo()
         {
             return int.Parse(txbCod.Text);
         }
+
+        private void btndel_Click(object sender, EventArgs e)
+        {
+            cat.BorrarDVD(codigo().ToString());
+            this.Close();
+        }
+
+        private void btnmod_Click(object sender, EventArgs e)
+        {
+            cat.AddEntrada(codigo().ToString());
+            this.Close();
+        }
+
+
     }
 }

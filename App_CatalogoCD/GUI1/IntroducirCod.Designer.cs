@@ -30,7 +30,7 @@
         {
             this.txbCod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btncont = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbCod
@@ -51,16 +51,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Introduzca el codigo del CD";
             // 
-            // btncont
+            // btndel
             // 
-            this.btncont.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncont.Location = new System.Drawing.Point(116, 138);
-            this.btncont.Name = "btncont";
-            this.btncont.Size = new System.Drawing.Size(123, 43);
-            this.btncont.TabIndex = 2;
-            this.btncont.Text = "Continuar";
-            this.btncont.UseVisualStyleBackColor = true;
-            this.btncont.Click += new System.EventHandler(this.btncont_Click);
+            this.btndel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndel.Location = new System.Drawing.Point(115, 138);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(123, 43);
+            this.btndel.TabIndex = 2;
+            this.btndel.Text = "Eliminar";
+            this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.btndel_Click);
             // 
             // IntroducirCod
             // 
@@ -68,7 +68,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(356, 193);
-            this.Controls.Add(this.btncont);
+            this.Controls.Add(this.btndel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbCod);
             this.Name = "IntroducirCod";
@@ -82,6 +82,6 @@
 
         private System.Windows.Forms.TextBox txbCod;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btncont;
+        private System.Windows.Forms.Button btndel;
     }
 }

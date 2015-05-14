@@ -21,12 +21,12 @@ namespace App_CatalogoCD
         {
             try
                 {
-                    if (dao.Conectar())
-                        Console.WriteLine("Conexión con éxito a la BD");
+                    if (dao.Conectar()) {};
+                       
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("ERROR: " + e.Message);
+                   // Console.WriteLine("ERROR: " + e.Message);
                 }
 				this.LeerDVD ();
         }
@@ -138,9 +138,9 @@ namespace App_CatalogoCD
         }
 		public override string ToString ()
 		{
-			String resultado = "\n";
+			String resultado = "\r\n";
 			foreach (var item in _catalogoDVD) {
-				resultado = resultado + item.ToString () + "\n";
+				resultado = resultado + item.ToString () + "\r\n";
 			}
 			return resultado;
 		}
