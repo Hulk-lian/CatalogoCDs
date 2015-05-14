@@ -1,4 +1,4 @@
-﻿namespace App_CatalogoCD.GUI1
+﻿namespace App_CatalogoCD
 {
     partial class GUI1
     {

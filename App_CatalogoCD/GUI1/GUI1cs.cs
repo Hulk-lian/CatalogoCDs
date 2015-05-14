@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace App_CatalogoCD.GUI1
+namespace App_CatalogoCD
 {
     public partial class GUI1 : Form
     {
@@ -34,17 +34,22 @@ namespace App_CatalogoCD.GUI1
 
         private void btnAnadirAzar_Click(object sender, EventArgs e)
         {
-
+            IntroducirCod cod = new IntroducirCod();
+            cod.Show();
+            cat.AddEntrada(cod.codigo().ToString());
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            IntroducirCod cod = new IntroducirCod();
+            cod.Show();
+            cat.AddEntrada(cod.codigo().ToString());
         }
 
         private void btnMod_Click(object sender, EventArgs e)
         {
-
+            Modificaciones mod= new Modificaciones();
+            mod.Show();
         }
 
         private void btnVolcarAxml_Click(object sender, EventArgs e)

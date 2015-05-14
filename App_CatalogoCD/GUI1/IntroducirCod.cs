@@ -9,15 +9,21 @@ using System.Windows.Forms;
 
 namespace App_CatalogoCD
 {
-    public partial class Lecturas : Form
+    public partial class IntroducirCod : Form
     {
-        public Lecturas()
+        public IntroducirCod()
         {
             InitializeComponent();
         }
-        public void llenarTextBox(string dat)
+
+        private void btncont_Click(object sender, EventArgs e)
         {
-            txbResultado.Text = dat;
+            codigo();
+            this.Close();
+        }
+        public int codigo()
+        {
+            return int.Parse(txbCod.Text);
         }
     }
 }

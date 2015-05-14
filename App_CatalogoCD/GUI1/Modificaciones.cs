@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace App_CatalogoCD.GUI1
+namespace App_CatalogoCD
 {
     public partial class Modificaciones : Form
     {

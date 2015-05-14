@@ -91,6 +91,12 @@
     <Compile Include="GUI1\GUI1cs.Designer.cs">
       <DependentUpon>GUI1cs.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI1\IntroducirCod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI1\IntroducirCod.Designer.cs">
+      <DependentUpon>IntroducirCod.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI1\Lecturas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
   <ItemGroup>
     <EmbeddedResource Include="GUI1\GUI1cs.resx">
       <DependentUpon>GUI1cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI1\IntroducirCod.resx">
+      <DependentUpon>IntroducirCod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI1\Lecturas.resx">
       <DependentUpon>Lecturas.cs</DependentUpon>
