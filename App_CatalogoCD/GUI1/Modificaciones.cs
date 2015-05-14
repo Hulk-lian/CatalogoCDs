@@ -18,6 +18,8 @@ namespace App_CatalogoCD
 
         private void nudcodigos_ValueChanged(object sender, EventArgs e)
         {
+            Catalogo c = new Catalogo();
+            string codigomod = cmbcodigos.Focused.ToString();
             
         }
 

@@ -43,7 +43,7 @@ namespace App_CatalogoCD
         {
             IntroducirCod cod = new IntroducirCod();
             cod.Show();
-            cat.AddEntrada(cod.codigo().ToString());
+            cat.BorrarDVD(cod.codigo().ToString());
         }
 
         private void btnMod_Click(object sender, EventArgs e)
@@ -54,7 +54,9 @@ namespace App_CatalogoCD
 
         private void btnVolcarAxml_Click(object sender, EventArgs e)
         {
-
+            Lecturas lect = new Lecturas();
+            lect.llenarTextBox(cat.Xml);
+            lect.Show();
         }
 
         private void btnFiltrarPais_Click(object sender, EventArgs e)
@@ -64,7 +66,7 @@ namespace App_CatalogoCD
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

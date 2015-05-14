@@ -99,6 +99,7 @@ namespace App_CatalogoCD
         public int BorrarDVD(string codigo) {
             return dao.Borrar(codigo);
         }
+
         public int ActualizarDVD(dvd unDVD)
 		{
 			return dao.Actualizar (unDVD);

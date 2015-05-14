@@ -48,7 +48,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSalir.Location = new System.Drawing.Point(317, 262);
+            this.btnSalir.Location = new System.Drawing.Point(220, 262);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(140, 47);
             this.btnSalir.TabIndex = 28;
@@ -65,12 +65,13 @@
             this.btnFiltrarPais.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFiltrarPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarPais.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btnFiltrarPais.Location = new System.Drawing.Point(126, 262);
+            this.btnFiltrarPais.Location = new System.Drawing.Point(32, 262);
             this.btnFiltrarPais.Name = "btnFiltrarPais";
             this.btnFiltrarPais.Size = new System.Drawing.Size(140, 47);
             this.btnFiltrarPais.TabIndex = 27;
             this.btnFiltrarPais.Text = "Filtrar por pais";
             this.btnFiltrarPais.UseVisualStyleBackColor = false;
+            this.btnFiltrarPais.Visible = false;
             this.btnFiltrarPais.Click += new System.EventHandler(this.btnFiltrarPais_Click);
             // 
             // btnVolcarAxml
