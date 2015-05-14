@@ -90,7 +90,6 @@ namespace App_CatalogoCD
         {
             if(saveFile.ShowDialog() == DialogResult.OK)
                 c.XmlAFichero(saveFile.FileName);
-            
         }
 
         /// <summary>
