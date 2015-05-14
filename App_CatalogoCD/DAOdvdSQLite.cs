@@ -74,7 +74,7 @@ namespace App_CatalogoCD
 			SQLiteCommand cmd = new SQLiteCommand(sql, conexion);
 			// construimos un datareader y ejecutamos el comando sql
 
-			SQLiteDataReader lector = cmd.ExecuteReader();
+		    SQLiteDataReader lector = cmd.ExecuteReader();
 			//recuperamos los datos y volcamos en el resultado a devolver
 
 			while (lector.Read())

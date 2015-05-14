@@ -28,55 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txbNombre = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txbTitulo = new System.Windows.Forms.TextBox();
+            this.txbartista = new System.Windows.Forms.TextBox();
+            this.txbpais = new System.Windows.Forms.TextBox();
+            this.txbcomp = new System.Windows.Forms.TextBox();
+            this.txbprecio = new System.Windows.Forms.TextBox();
+            this.txbanio = new System.Windows.Forms.TextBox();
+            this.cmbcodigos = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // txbNombre
+            // txbTitulo
             // 
-            this.txbNombre.Location = new System.Drawing.Point(31, 50);
-            this.txbNombre.Name = "txbNombre";
-            this.txbNombre.Size = new System.Drawing.Size(100, 20);
-            this.txbNombre.TabIndex = 0;
+            this.txbTitulo.Location = new System.Drawing.Point(31, 82);
+            this.txbTitulo.Name = "txbTitulo";
+            this.txbTitulo.Size = new System.Drawing.Size(100, 20);
+            this.txbTitulo.TabIndex = 0;
+            this.txbTitulo.Text = "Título";
             // 
-            // textBox2
+            // txbartista
             // 
-            this.textBox2.Location = new System.Drawing.Point(31, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txbartista.Location = new System.Drawing.Point(31, 141);
+            this.txbartista.Name = "txbartista";
+            this.txbartista.Size = new System.Drawing.Size(100, 20);
+            this.txbartista.TabIndex = 1;
+            this.txbartista.Text = "Artista";
             // 
-            // textBox3
+            // txbpais
             // 
-            this.textBox3.Location = new System.Drawing.Point(31, 202);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txbpais.Location = new System.Drawing.Point(31, 202);
+            this.txbpais.Name = "txbpais";
+            this.txbpais.Size = new System.Drawing.Size(100, 20);
+            this.txbpais.TabIndex = 2;
+            this.txbpais.Text = "Pais";
             // 
-            // textBox4
+            // txbcomp
             // 
-            this.textBox4.Location = new System.Drawing.Point(218, 50);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txbcomp.Location = new System.Drawing.Point(218, 82);
+            this.txbcomp.Name = "txbcomp";
+            this.txbcomp.Size = new System.Drawing.Size(100, 20);
+            this.txbcomp.TabIndex = 3;
+            this.txbcomp.Text = "Compañia";
             // 
-            // textBox5
+            // txbprecio
             // 
-            this.textBox5.Location = new System.Drawing.Point(218, 125);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.txbprecio.Location = new System.Drawing.Point(218, 141);
+            this.txbprecio.Name = "txbprecio";
+            this.txbprecio.Size = new System.Drawing.Size(100, 20);
+            this.txbprecio.TabIndex = 4;
+            this.txbprecio.Text = "Precio";
             // 
-            // textBox6
+            // txbanio
             // 
-            this.textBox6.Location = new System.Drawing.Point(218, 202);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.txbanio.Location = new System.Drawing.Point(218, 202);
+            this.txbanio.Name = "txbanio";
+            this.txbanio.Size = new System.Drawing.Size(100, 20);
+            this.txbanio.TabIndex = 5;
+            this.txbanio.Text = "Año";
+            // 
+            // cmbcodigos
+            // 
+            this.cmbcodigos.FormattingEnabled = true;
+            this.cmbcodigos.Location = new System.Drawing.Point(31, 33);
+            this.cmbcodigos.Name = "cmbcodigos";
+            this.cmbcodigos.Size = new System.Drawing.Size(121, 21);
+            this.cmbcodigos.TabIndex = 6;
             // 
             // Modificaciones
             // 
@@ -84,14 +99,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(349, 276);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txbNombre);
+            this.Controls.Add(this.cmbcodigos);
+            this.Controls.Add(this.txbanio);
+            this.Controls.Add(this.txbprecio);
+            this.Controls.Add(this.txbcomp);
+            this.Controls.Add(this.txbpais);
+            this.Controls.Add(this.txbartista);
+            this.Controls.Add(this.txbTitulo);
             this.Name = "Modificaciones";
             this.Text = "Modificaciones";
+            this.Load += new System.EventHandler(this.Modificaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,11 +116,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txbNombre;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txbTitulo;
+        private System.Windows.Forms.TextBox txbartista;
+        private System.Windows.Forms.TextBox txbpais;
+        private System.Windows.Forms.TextBox txbcomp;
+        private System.Windows.Forms.TextBox txbprecio;
+        private System.Windows.Forms.TextBox txbanio;
+        private System.Windows.Forms.ComboBox cmbcodigos;
     }
 }

@@ -15,5 +15,19 @@ namespace App_CatalogoCD.GUI1
         {
             InitializeComponent();
         }
+
+        private void nudcodigos_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Modificaciones_Load(object sender, EventArgs e)
+        {
+            Catalogo cata= new Catalogo();
+            foreach (dvd item in cata.CatalogoDVD)
+            {
+                cmbcodigos.Items.Add(item.Codigo);
+            }
+        }
     }
 }

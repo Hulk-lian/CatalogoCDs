@@ -15,5 +15,9 @@ namespace App_CatalogoCD.GUI1
         {
             InitializeComponent();
         }
+        public void llenarTextBox(string dat)
+        {
+            txbResultado.Text = dat;
+        }
     }
 }

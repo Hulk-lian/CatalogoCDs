@@ -18,12 +18,18 @@ namespace App_CatalogoCD.GUI1
         Catalogo cat = new Catalogo();
         private void btnLeer_Click(object sender, EventArgs e)
         {
+            Lecturas lect = new Lecturas();
             cat.LeerDVD();
+            lect.llenarTextBox(cat.ToString());
+            lect.Show();
+
         }
 
         private void btnXmlLeer_Click(object sender, EventArgs e)
         {
-
+            Lecturas lect = new Lecturas();
+            lect.llenarTextBox(cat.Xml);
+            lect.Show();
         }
 
         private void btnAnadirAzar_Click(object sender, EventArgs e)
